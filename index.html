@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul id="element">
+        <li class="list-item">first element</li>
+        <li class="list-item">second element</li>
+        <li class="list-item">third element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table> -->
+
+    <button id="clickbtn">Click Me</button>
+    <button id="erase">Remove Me</button>
+    <h1></h1>
+    <script>
+        // Root Node-->
+
+        // console.log(document.documentElement)
+        // console.log(document.body)
+        // console.log(document.head)
+
+        //childrens-->
+
+        // console.log(document.body.childNodes)
+        // console.log(document.body.children)
+        // console.log(document.body.firstElementChild)
+        
+        // Table
+        // const tableTag=document.body.children[1]
+        // console.log(tableTag)
+
+        // ID Search-->
+
+        //console.log(element.style.background='red')
+        // const ulTag=document.getElementById('element')
+        // ulTag.style.background='hotpink'
+        // console.log(ulTag)
+
+        // let listItem = document.getElementsByClassName("list-Item")
+        // console.log(listItem)
+
+        //console.log(document.getElementsByName("table"))
+
+        //const listItem = document.querySelectorAll(".list-item")
+        //console.log(listItem)
+
+        // Events-->
+
+        function callMe(){
+            alert("Thanks for Clicking me !!")
+            document.querySelector("h1").innerHTML+='Hello Jain'
+        }
+
+        function callMeAgain(){
+            document.querySelector("h1").innerHTML+='Empty'
+        }
+        //clickbtn.onclick = callMe
+
+        clickbtn.addEventListener('click',callMe)
+
+        //erase.addEventListener('click',function(){alert("Thanks")})
+    </script>
+</body>
+</html>
