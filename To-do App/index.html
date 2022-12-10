@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <script src="https://kit.fontawesome.com/89dc3a6c80.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="clear">
+        <i class="fa-solid fa-arrows-rotate"></i>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT7sHUDclgy40b_fIvgJrd8eRFGdfpnkwp8Q&usqp=CAU" alt="img">
+      </div>
+      <div class="date" id="date">
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- List -->
+      <ul id="list">
+        <li class="item">
+          <i class="fa-regular fa-circle"></i>
+          <p class="text">Drink Coffe</p>
+          <i class="fa-solid fa-trash"></i>
+        </li>
+      </ul>
+      <!-- Add Item -->
+      <div class="add-item">
+        <i class="fa-solid fa-plus"></i>
+        <input type="text" id="input" placeholder="Add a to-do">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
